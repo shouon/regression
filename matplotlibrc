@@ -1,0 +1,11 @@
+mathtext.fontset: cm
+
+axes.xmargin: 0.0
+
+xtick.top: True
+xtick.bottom: True
+xtick.left: True
+xtick.right: True
+
+xtick.direction: in
+ytick.direction: in

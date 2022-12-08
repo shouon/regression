@@ -47,11 +47,15 @@ def main():
     noise_ratio = 0.05
     eps_score = 1e-8
     #多項式フィッティングの設定
-    regressor_name='poly'
+    regressor_name='gp'
     regressor_kwargs = dict(
         poly = dict(
             d = 3,
         ),
+        gp=dict(
+            sigma_x=0.2,
+            sigma_y=0.1,
+        )
     )  
     regressor = build_regressor(regressor_name,regressor_kwargs)
     #x, f(x)の準備
